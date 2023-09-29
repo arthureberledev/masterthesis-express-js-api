@@ -21,26 +21,26 @@ The code, findings, and analyses from this project are intended to be shared wit
 
 Here are the available endpoints:
 
-GET `/users`: Fetch all users.
+`GET /users`: Fetch all users.
 
-POST `/users`: Create a new user.
+`POST /users`: Create a new user.
 
-PUT `/users/:id`: Update a user.
+`PUT /users/:id`: Update a user.
 
-DELETE `/users/:id`: Delete a user.
+`DELETE /users/:id`: Delete a user.
 
-GET `/products`: Fetch all products.
+`GET /products`: Fetch all products.
 
-POST `/products`: Create a new product.
+`POST /products`: Create a new product.
 
-PUT `/products/:id`: Update a product.
+`PUT /products/:id`: Update a product.
 
-DELETE `/products/:id`: Delete a product.
+`DELETE /products/:id`: Delete a product.
 
-GET `/orders`: Fetch all orders.
+`GET /orders`: Fetch all orders.
 
-POST `/orders`: Create a new order.
+`POST /orders`: Create a new order.
 
-PUT `/orders/:id`: Update an order.
+`PUT /orders/:id`: Update an order.
 
-DELETE `/orders/:id`: Delete an order.
+`DELETE /orders/:id`: Delete an order.
