@@ -1,8 +1,8 @@
-# Masterthesis
+# Monolithic architecture
 
 This repository contains the code for an Express.js API that demonstrates a Monolithic architecture.
 
-## Purpose
+### Purpose
 
 The primary purpose of this project is to serve as a practical component of a Master's thesis aimed at comparing different server architectures - Monolithic, Serverless, and Microservices with Kubernetes. This Express.js API project encapsulates a Monolithic architecture, providing a simplified yet representative model for evaluation and analysis.
 
