@@ -1,6 +1,6 @@
 # Masterthesis
 
-This repository contains the code for an Express.js API that demonstrates a Monolithic architecture. 
+This repository contains the code for an Express.js API that demonstrates a Monolithic architecture.
 
 ## Purpose
 
@@ -20,17 +20,27 @@ The code, findings, and analyses from this project are intended to be shared wit
 ### Endpoints
 
 Here are the available endpoints:
-GET /users: Fetch all users.
-POST /users: Create a new user.
-PUT /users/:id: Update a user.
-DELETE /users/:id: Delete a user.
-GET /products: Fetch all products.
-POST /products: Create a new product.
-PUT /products/:id: Update a product.
-DELETE /products/:id: Delete a product.
-GET /orders: Fetch all orders.
-POST /orders: Create a new order.
-PUT /orders/:id: Update an order.
-DELETE /orders/:id: Delete an order.
 
+GET `/users`: Fetch all users.
 
+POST `/users`: Create a new user.
+
+PUT `/users/:id`: Update a user.
+
+DELETE `/users/`:id: Delete a user.
+
+GET `/products`: Fetch all products.
+
+POST `/products`: Create a new product.
+
+PUT `/products/:id`: Update a product.
+
+DELETE `/products/:id`: Delete a product.
+
+GET `/orders`: Fetch all orders.
+
+POST `/orders`: Create a new order.
+
+PUT `/orders/:id`: Update an order.
+
+DELETE `/orders/:id`: Delete an order.
