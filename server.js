@@ -9,8 +9,8 @@ const port = process.env.PORT || 3000;
 // });
 
 const options = {
-  cert: fs.readFileSync("./ssl/cert.pem"),
-  key: fs.readFileSync("./ssl/key.pem"),
+  cert: fs.readFileSync("/ssl/cert.pem"),
+  key: fs.readFileSync("/ssl/key.pem"),
   passphrase: "password123",
 };
 
