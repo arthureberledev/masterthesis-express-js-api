@@ -40,10 +40,10 @@ router.post("/", (req, res) => {
   );
 });
 
-router.put("/:id", (req, res) => {
+router.patch("/:id", (req, res) => {
   pool.query(
-    "UPDATE users SET name = ? WHERE id = ?",
-    [req.body.name, req.params.id],
+    "UPDATE users SET email = ? WHERE id = ?",
+    [req.body.email, req.params.id],
     (error, _results) => {
       if (error) {
         console.error(error);
@@ -53,6 +53,20 @@ router.put("/:id", (req, res) => {
     }
   );
 });
+
+// router.put("/:id", (req, res) => {
+//   pool.query(
+//     "UPDATE users SET name = ? WHERE id = ?",
+//     [req.body.name, req.params.id],
+//     (error, _results) => {
+//       if (error) {
+//         console.error(error);
+//         return res.status(500).send("Database error");
+//       }
+//       res.json({ id: req.params.id, ...req.body });
+//     }
+//   );
+// });
 
 router.delete("/:id", (req, res) => {
   pool.query(
