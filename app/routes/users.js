@@ -28,8 +28,8 @@ router.get("/:id", (req, res) => {
 
 router.post("/", (req, res) => {
   pool.query(
-    "INSERT INTO users (name) VALUES (?)",
-    [req.body.name],
+    "INSERT INTO users (name, email) VALUES (?, ?)",
+    [req.body.name, req.body.email],
     (error, results) => {
       if (error) {
         console.error(error);
