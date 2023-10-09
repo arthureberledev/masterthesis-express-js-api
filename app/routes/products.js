@@ -12,6 +12,20 @@ router.get("/", (_req, res) => {
   });
 });
 
+router.get("/:id", (req, res) => {
+  pool.query(
+    "SELECT * FROM products WHERE id = ?",
+    [req.params.id],
+    (error, results) => {
+      if (error) {
+        console.error(error);
+        return res.status(500).send("Database error");
+      }
+      res.json(results);
+    }
+  );
+});
+
 router.post("/", (req, res) => {
   pool.query(
     "INSERT INTO products (name, price) VALUES (?, ?)",
